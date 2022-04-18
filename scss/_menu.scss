@@ -1,0 +1,129 @@
+// 
+// menu.scss
+// 
+
+/* navbar start */
+.navbar {
+    transition: all 0.3s ease-in-out;
+    padding: 12px 0px;
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font-size: 15px;
+                font-weight: 400;
+                color: rgba($white, 0.7);
+                margin-right: 20px;
+                
+                &:hover, &:focus {
+                    color: $primary;
+                }               
+            }            
+            &.active {
+                .nav-link {
+                    color: $primary !important;
+                }
+            }
+            &:last-child {
+                .nav-link {
+                margin-right: 0px;
+                padding-right: 0px;
+                }
+            }
+        }
+    }
+    .navbar-brand { 
+        .logo-dark {
+            display: none;
+        }
+        .logo-light {
+            display: inline-block;
+        }
+    }
+}
+
+// navbar-sticky
+.nav-sticky {
+    background-color: $white;
+    box-shadow: 0 6px 20px 0 rgba($gray-800, 0.07);
+    .nav-item {
+        .nav-link {
+            color: $gray-600 !important; 
+            &:hover, &:focus, &.active {
+                color: $primary !important;
+            }
+        }
+    }
+    .navbar-brand {
+        .logo-dark {
+            display: inline-block;
+        }
+        .logo-light {
+            display: none;
+        }
+    }
+}
+
+// navbar-light
+.navbar-light {
+    background-color: $white;
+    box-shadow: 0 6px 20px 0 rgba($gray-800, 0.05);
+    .nav-item {
+        .nav-link{
+            color: $gray-600 !important; 
+            &:hover, &:focus, &.active {
+                color: $primary !important;
+            }
+        }
+    }
+    .navbar-brand { 
+        .logo-dark {
+            display: inline-block;
+        }
+        .logo-light {
+            display:none;
+        }
+    }
+}
+
+
+
+// responsive
+@media (max-width: 768px) {
+    .navbar {
+        >.container {
+            width: 90%;
+        }
+        background-color: $white;
+        .nav-item {
+            .nav-link {
+                color: rgba($dark, 0.7)!important;
+            }
+        }
+        .navbar-toggler {
+            padding: 0;
+            border: none;
+                .navbar-toggle-icon {
+                    color: $dark;
+                    font-size: 24px;
+                }
+                &:focus {
+                    outline: none;
+                }
+        }
+        .navbar-brand {
+            .logo-dark {
+                display: inline-block;
+            }
+            .logo-light {
+                display: none;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+

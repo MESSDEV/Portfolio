@@ -1,0 +1,61 @@
+// 
+// about.scss
+// 
+
+.about-border {
+    &:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        right: -25px;
+        bottom: 25px;
+        left: 25px;
+        border: 1px solid $primary;
+        opacity: 0.3;
+        border-radius: 4px;
+    }
+    .about-img {
+        position: relative;
+        z-index: 1;
+    } 
+    .about-dot {
+        position: absolute;
+        bottom: -40px;
+        left: -40px;
+        opacity: 0.3;
+    }
+}
+
+// responsive
+@media (max-width:576px) {
+    .about-border {
+        &:before {
+            display: none;
+        }
+    }    
+
+    .about-content {
+        dd {
+            display: flex;
+            padding-left: 0px;
+        }
+        dt {
+            display: flex;
+            padding-right: 0px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-border {
+        .about-dot {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+        }
+    }
+}
+
+   
+
+    

@@ -1,0 +1,32 @@
+// 
+// footer.scss
+// 
+
+// start footer
+.footer {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.social-list {
+    .social-link {
+        background-color: $gray-800;
+        width: 32px;
+        height: 32px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;       
+        font-size: 16px; 
+    }
+    &:hover {
+        .social-link {
+            text-decoration: none;
+            color: $primary;
+        }
+    }   
+}
+
+

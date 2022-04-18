@@ -1,0 +1,120 @@
+// 
+// helper.scss
+// 
+
+// color
+@each $color, $value in $theme-colors {
+    .text-#{$color} {
+        color: ($value) !important;
+    }
+    .bg-#{$color} {
+        background-color: ($value) !important;
+    }    
+}
+
+
+
+
+/* font-size */
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-15 {
+    font-size: 15px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-17 {
+    font-size: 17px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-19 {
+    font-size: 19px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-21 {
+    font-size: 21px;
+}
+
+.font-size-22 {
+    font-size: 22px;
+}
+
+.font-size-23 {
+    font-size: 23px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+/* font weight */
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.font-weight-semibold {
+    font-weight: 600;
+}
+
+// font opacity
+.text-white-70 {
+    color: rgba($white,0.7);
+}
+
+// title-border
+.title-border {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+        background-color: $primary;
+        height: 2px;
+        width: 34px;
+    }  
+}
+
+// section
+.section {
+    padding: 100px 0px;
+}
+
+// background overlay
+.bg-overlay {
+    background-color: rgba($gray-900, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width:576px) {
+    .title {
+        font-size: 1.6rem;
+    }
+}
+

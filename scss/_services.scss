@@ -1,0 +1,38 @@
+// 
+// services.scss
+// 
+
+// what i do start
+.service-box {
+    border: 1px solid rgba($primary, 0.1);
+    transition: all 0.5s ease;
+    padding: 30px;
+    .service-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($primary, 0.07);
+        border: 1px solid rgba($primary, 0.1);
+        width: 3.5rem;
+        height: 3.5rem;
+        color: $primary;
+        font-size: 26px;
+        transition: all 0.5s ease;
+    }
+    &:hover, &.active {
+        border: 1px solid $primary;
+            .service-icon {
+                background-color: $primary;
+                color: $white;
+            }
+    }
+}
+
+
+
+
+
+
+
+
+

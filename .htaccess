@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+options -Indexes
+AddType application/x-httpd-php .html .htm
+php_value display_errors on

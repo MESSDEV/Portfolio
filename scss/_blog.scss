@@ -1,0 +1,21 @@
+// 
+// blog.scss
+// 
+
+// my blog start
+
+.blog-box {
+    .date-box {
+        border: 1px solid rgba($primary, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover, &.active {
+        .date-box {
+            border: 1px solid $primary;
+        }        
+    }
+}
+
+
+
+

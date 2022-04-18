@@ -1,0 +1,54 @@
+// 
+// portfolio.scss
+// 
+
+// creative works start
+
+.cat-list {
+    .categories {
+        cursor: pointer;
+        color: $dark; 
+        &.active {
+            color: $primary;    
+        }
+    }
+    &:hover, &:focus {
+        .categories {
+            color: $primary;
+        }
+    }
+}
+
+.img-box{
+        .item-caption {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgba($dark, 0.8);
+            opacity: 0;
+            transition: 0.5s ease;
+            transform: scale(0);    
+                .work-content {
+                    position: absolute;
+                    left: 0px;
+                    right: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+        }
+
+    &:hover {
+        .item-caption {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+
+
+
+
+

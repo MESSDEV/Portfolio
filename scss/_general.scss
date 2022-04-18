@@ -1,0 +1,19 @@
+// 
+// general.scss
+// 
+
+a {
+    text-decoration: none !important;
+    outline: none;
+}
+body {
+    font-family: $font-primary;
+    color: $dark;
+    background: $body-bg;
+    line-height: 1.6;
+    font-size: 14.4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-secondary;
+}

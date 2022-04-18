@@ -1,0 +1,52 @@
+//
+// variables.scss
+//
+
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// Color variables
+
+$white:               #ffffff;
+$gray-100:            #F8F9FA;
+$gray-200:            #F5F6F8;
+$gray-300:            #e8e8e8;
+$gray-400:            #CED4DA;
+$gray-500:            #a7a9c0;
+$gray-600:            #7e8097;
+$gray-700:            #495057;
+$gray-800:            #30364d;
+$gray-900:            #212529;
+$black:               #000;
+
+
+$primary:             #ff4d41;
+$secondary:           #6c757d;
+$success:             #2dd6b7;
+$info:                #56c6e6;
+$warning:             #ffbb13;
+$danger:              #f0183c;
+$dark:                #232940;
+$light:               #fff9f9;
+$muted:               #9090a0; 
+
+// theme color
+$theme-colors:(    
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "dark": $dark,
+        "light": $light,
+        "muted": $muted
+ );
+
+
+$body-bg:             #ffffff;
+
+// Font
+$font-primary:        'Poppins', sans-serif;
+$font-secondary:      'Poppins', sans-serif;
+
