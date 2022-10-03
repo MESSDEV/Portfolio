@@ -291,7 +291,7 @@ figure:hover{-webkit-transform:rotateX(-50deg) rotateY(45deg);transform:rotateX(
                           </div>
                     </div>
 
-
+                    
                     <div class="col-lg-4 col-md-6 mt-4 pt-2 web">
                         <a  target="_blank" href="IT-School/index-School.html"><div class="position-relative rounded overflow-hidden img-box">
                             <img class="img-fluid" src="images/work-2.jpg" alt="" />
@@ -518,32 +518,9 @@ figure:hover{-webkit-transform:rotateX(-50deg) rotateY(45deg);transform:rotateX(
 				return true;
 		}
 		window.onload = date_time('s');
-
-        $(function(){
-
-            var $container = $('#container-filter');
-          
-          
-            $container.isotope({
-              itemSelector: '.categories-filter',
-              masonry : { columnWidth: 70 },
-              filter: '.'
-            });
-          
-          
-            var PageLoadFilter = '.algo';
-            $container.isotope({ filter: PageLoadFilter});
-          
-            $('#portfolio button').click(function(){
-              $container.isotope({
-                filter: this.getAttribute('data-filter')
-              });
-            });
-          
-          });	
 		</script>
 	    
 	    
-        	
+		
     </body>
 </html>
